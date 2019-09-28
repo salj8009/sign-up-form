@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1.8fr 0.2fr;
+  grid-template-areas: "texto formulario" "footer footer";
+  height: 100vh;
+}
+body {
+	background-image: url(../images/bg-intro-desktop.png);
+	background-color: hsl(0, 100%, 74%);
+	text-align: center;
+}
+.texto { grid-area: texto;}
+
+.formulario { 
+	grid-area: formulario; 
+	padding-left: 8em;
+    padding-right: 8em;
+}
+
+.footer { grid-area: footer; }
+
+.colorBlanco {
+		color: #FFFFFF;
+}
+#escritorio {
+	padding-top: 10em;
+} 
+#titulo {
+
+		font-family: 'Poppins', sans-serif;
+	    font-size: 4em;
+	    margin: 2em .5em 1em .5em;
+	    font-weight: 700;
+}
+#parrafoTxt {
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 5em;
+}
+#btnFree {
+		background-color: hsl(248, 32%, 49%);
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.1em;
+    	margin: 5em 1em 2em 1em;
+    	padding: 1em 2em;
+/*borde del boton*/
+		border-top-left-radius:15px;
+		border-top-right-radius:15px;
+		border-bottom-left-radius:15px;
+		border-bottom-right-radius:15px;
+/*sombra btn*/
+		box-shadow: 0px 10px 5px #35343547;			    	
+}
+
+#btnTrial {
+	background-color: hsl(154, 59%, 51%);
+	    padding: 1em;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 1em;
+    box-shadow: 0px 7px 5px #35343547;
+}
+#parrafo {
+	font-family: 'Poppins', sans-serif;
+	color: hsl(246, 25%, 77%);
+	font-size: .8em;
+}
+#terminos {
+	color: hsl(0, 100%, 74%);
+	font-size: .8em;
+}
+	#miFormulario {
+		background-color: #FFF;
+    	border-radius: 15px;
+    	padding: 1em;
+    	display: grid;
+    	margin: 1em;
+    	/*borde del boton*/
+		border-top-left-radius:15px;
+		border-top-right-radius:15px;
+		border-bottom-left-radius:15px;
+		border-bottom-right-radius:15px;
+/*sombra btn*/
+		box-shadow: 0px 10px 5px #35343547;
+		height: 50vh;	
+	}
+	.cajasTexto {
+		margin: 1em;
+    	padding: .7em;
+    	color: hsl(246, 25%, 77%);
+    	font-family: 'Poppins', sans-serif;
+    	font-weight: 700;
+	}	
+
+
+@media only screen
+and (max-width : 375px) {
+/* Styles */
+	.grid-container {
+		  display: grid;
+		  grid-template-columns: 1fr 1fr;
+		  grid-template-rows: .7fr 0.2fr;
+		  grid-template-areas: "texto texto" "formulario formulario" "footer footer";
+	}
+.formulario { 
+	grid-area: formulario; 
+	padding-left: .1em;
+    padding-right: .1em;
+}
+
+#escritorio {
+	padding-top: .1em;
+} 	
+	
+	#titulo {
+		font-family: 'Poppins', sans-serif;
+	    font-size: 2.2em;
+	    margin: 2em .5em 1em .5em;
+	    font-weight: 700;
+	}
+	#parrafoTxt {
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.1em;
+    	margin: auto .5em 3em .5em;
+	}
+	#btnFree {
+		font-family: 'Poppins', sans-serif;
+		font-size: 1.1em;
+    	margin: 1em 1em 2em 1em;
+    	padding: 1em 2em;
+/*borde del boton*/
+		border-top-left-radius:15px;
+		border-top-right-radius:15px;
+		border-bottom-left-radius:15px;
+		border-bottom-right-radius:15px;
+/*sombra btn*/
+		box-shadow: 0px 10px 5px #35343547;			    	
+	}
+	#miFormulario {
+		background-color: #FFF;
+    	border-radius: 15px;
+    	padding: 1em;
+    	display: grid;
+    	margin: 1em;
+    	height: auto;
+    	/*borde del boton*/
+		border-top-left-radius:15px;
+		border-top-right-radius:15px;
+		border-bottom-left-radius:15px;
+		border-bottom-right-radius:15px;
+/*sombra btn*/
+		box-shadow: 0px 10px 5px #35343547;	
+	}
+	.cajasTexto {
+		margin: 1em;
+    	padding: .7em;
+    	color: hsl(246, 25%, 77%);
+    	font-family: 'Poppins', sans-serif;
+    	font-weight: 700;
+	}		
+
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="grid-container">
+  <div class="texto">
+    <div id="escritorio">
+        <h1 id="titulo"  class="colorBlanco">Learn to code by watching others</h1>
+
+        <p id="parrafoTxt" class="colorBlanco">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>      
+    </div>
+ 
+
+  
+
+        
+  </div>
+  <div class="formulario">
+    <button class="colorBlanco" id="btnFree"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button>
+    <form id="miFormulario">
+      <input id="nombre" class="cajasTexto" type="text" placeholder="First Name">
+      <input id="apellido" class="cajasTexto" type="text" placeholder="Last Name">
+      <input id="email" class="cajasTexto" type="email" placeholder="Email Address">
+      <input id="password" class="cajasTexto" type="password" placeholder="Password">
+      <button id="btnTrial" class="colorBlanco" onclick="revform()">Claim your free trial</button>
+      <p id="parrafo">By clicking the button, you are agreeing to our <span id="terminos">Terms and Services</span></p>
+    </form>
+  </div>
+  <div class="footer">
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">salj8009</a>.
+    </p>
+  </footer>    
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
+
